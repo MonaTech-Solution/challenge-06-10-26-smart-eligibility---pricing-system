@@ -25,6 +25,27 @@ discount = 10 / 100
 if age >= 18 and (is_eligible and number_of_tickets >= 3):
     discount_price = (price_per_ticket * 90) / 100
     price = discount_price * number_of_tickets
+    print(
+    f"""
+You are Eligible for 10% discount as a student who is {age} years old and for purchasing at least 3 tickets.
+*************************************************************
+Invoice
+*************************************************************
+Discounted Price: {discount_price}
+Number of Tickets: {number_of_tickets}
+Total: {price}
+    """
+    )
 else:
     price = number_of_tickets * price_per_ticket
-print(price)
+    print(
+    f"""
+Not Eligible for discount.
+*************************************************************
+Invoice
+*************************************************************
+Price per Ticket: {price_per_ticket}
+Number of Tickets: {number_of_tickets}
+Total: {price}
+    """
+    )
