@@ -20,3 +20,11 @@ number_of_tickets = int(input("Number of ticket bought: "))
 is_eligible = is_student == "yes"
 price_per_ticket = 800.0
 discount = 10 / 100
+
+# Eligibility Check and Discount Calculation
+if age >= 18 and (is_eligible and number_of_tickets >= 3):
+    discount_price = (price_per_ticket * 90) / 100
+    price = discount_price * number_of_tickets
+else:
+    price = number_of_tickets * price_per_ticket
+print(price)
