@@ -15,3 +15,8 @@ Minimum challenge
 age = int(input("Enter age: "))
 is_student = input("Are you a student? ")
 number_of_tickets = int(input("Number of ticket bought: "))
+
+# Variables
+is_eligible = is_student == "yes"
+price_per_ticket = 800.0
+discount = 10 / 100
